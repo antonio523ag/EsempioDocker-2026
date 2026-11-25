@@ -1,0 +1,9 @@
+services:
+  nome-custom-service:
+    container_name: jarSpring
+    build:
+      context: ./jarSpring
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8088"
+    restart: unless-stopped
